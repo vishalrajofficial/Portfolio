@@ -1,6 +1,6 @@
 # Portfolio Project
 
-![Portfolio](https://github.com/vishalrajofficial/Portfolio/blob/master/images/portfolio-screenshot.png)
+![Portfolio](https://github.com/vishalrajofficial/Portfolio/blob/main/readme-images/portfolio-screenshot.png)
 
 Welcome to my portfolio project! This project showcases my skills, projects, and experiences as a web developer. The portfolio is built using HTML5, CSS3, JavaScript, and other technologies to create an attractive and interactive website.
 
