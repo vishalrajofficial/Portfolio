@@ -64,4 +64,6 @@ public/
 
 # dotenv environment variables file
 .env
-desktop.ini
+desktop.
+
+public/
