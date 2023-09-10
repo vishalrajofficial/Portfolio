@@ -30,8 +30,10 @@ jobs:
 
       - name: Validate HTML/CSS
         run: |
+          git clone https://github.com/vishalrajofficial/Portfolio.git my-repo
+          cd my-repo
           npm install -g vnu-jar
-          java -jar $(npm root -g)/vnu-jar/dist/vnu.jar https://github.com/vishalrajofficial/Portfolio/blob/main/index.html          
+          java -jar $(npm root -g)/vnu-jar/dist/vnu.jar index.html          
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
