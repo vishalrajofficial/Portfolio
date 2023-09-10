@@ -1,0 +1,19 @@
+name: 'HTML Validator'
+on:
+ push:
+   branches: [ main ]
+ pull_request:
+   branches: [ main ]
+jobs: 
+  build:
+    runs-on: ubuntu-latest      
+    steps:
+    - uses: actions/checkout@v2
+    - name: HTML5Validator
+      uses: Cyb3r-Jak3/html5validator-action@v7.1.1
+      
+      with:
+        root: Test_HTML_code
+        format: text
+        blacklist: invalid
+      continue-on-error: true
