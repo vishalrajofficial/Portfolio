@@ -1,4 +1,4 @@
-name: Deploy static content to Pages with Validation
+name: Deploy static content to Pages
 
 on:
   push:
@@ -27,13 +27,6 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          
-          path: '.'
-          name: 'web-app-artifact'
 
       - name: Deploy to GitHub Pages
         id: deployment
