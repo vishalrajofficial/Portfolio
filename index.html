@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="I'm Vishal Raj, a final-year Computer Science student, specializing in crafting web apps and diving into cloud computing. 🚀">
+  <meta name="description"
+    content="I'm Vishal Raj, a final-year Computer Science student, specializing in crafting web apps and diving into cloud computing. 🚀">
   <title>Vishal Raj's Tech Portfolio</title>
 
   <!-- 
@@ -26,10 +27,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
     rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6278624851298719" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
 </head>
 
 <body id="top" class="dark_theme">
-
   <!-- 
     - #HEADER
   -->
@@ -237,16 +239,21 @@
           <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
 
           <p class="section-text">
-            Hello, I'm Vishal Raj, a software developer with a passion for crafting elegant applications enriched with intuitive functionalities. I derive immense satisfaction from transforming concepts into tangible solutions through innovative approaches. My insatiable curiosity drives me to continuously acquire new skills, tools, and knowledge. I firmly believe in the power of collaboration. From crafting dynamic websites to delving into the intricacies of cloud-native applications, I'm always eager to embrace new challenges and push the boundaries of what's possible.
-            
-            
+            Hello, I'm Vishal Raj, a software developer with a passion for crafting elegant applications enriched with
+            intuitive functionalities. I derive immense satisfaction from transforming concepts into tangible solutions
+            through innovative approaches. My insatiable curiosity drives me to continuously acquire new skills, tools,
+            and knowledge. I firmly believe in the power of collaboration. From crafting dynamic websites to delving
+            into the intricacies of cloud-native applications, I'm always eager to embrace new challenges and push the
+            boundaries of what's possible.
+
+
           </p>
 
           <div class="btn-group">
-            <a href="https://bit.ly/3qVcS11">
+            <a href="https://drive.google.com/file/d/1-EyvoHFjs7lK5eZcp3k1HiSy_1dAak7L/view?usp=sharing">
               <button class="btn btn-secondary">Download Resume</button>
             </a>
-            
+
 
             <!-- <button class="btn btn-primary">Download cv</button> -->
           </div>
@@ -826,7 +833,7 @@
 
         </div>
 
-        <form action="" class="contact-form">
+        <form class="contact-form" id="contact-form-id">
 
           <div class="form-wrapper">
 
@@ -863,7 +870,7 @@
 
             <div class="input-wrapper">
 
-              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+              <input type="tel" name="phone" id="phone" placeholder="Phone Number" class="input-field">
 
               <ion-icon name="call"></ion-icon>
 
@@ -886,7 +893,7 @@
 
           </div>
 
-          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="submit" class="btn btn-primary" onclick="sendMail();">Send</button>
 
         </form>
 
@@ -908,7 +915,7 @@
 
       <p class="h1 logo">
         <a href="#">
-         My <span>World</span>
+          My <span>World</span>
         </a>
       </p>
 

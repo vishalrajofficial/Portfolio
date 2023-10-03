@@ -1,12 +1,14 @@
 'use strict';
-
+// import emailjs from 'emailjs-com';
 /**
  * element toggle function
  */
 
 const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-
+var form = document.getElementById("contact-form-id");
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', handleForm);
 
 /**
  * header sticky & go to top
@@ -102,4 +104,25 @@ if (localStorage.getItem("theme") === "light_theme") {
   themeToggleBtn.classList.remove("active");
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
+}
+// email js integration
+function sendMail() {
+  // event.preventDefault();
+  console.log("send mail");
+  (function () {
+    emailjs.init("MtcvXKqriW7vkDwvD");
+  })();
+  var params = {
+    from_name: document.getElementById("name").value,
+    from_email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    message: document.getElementById("message").value,
+  };
+  var serviceID = "service_1mikgrd";
+  var templateID = "template_ppcd9fo";
+  emailjs.send(serviceID, templateID, params)
+    .then(res => {
+      alert("Message sent successfully");
+    })
+    .catch();
 }
