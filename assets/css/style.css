@@ -1338,3 +1338,36 @@ textarea.input-field {
   .about-banner { max-width: 450px; }
 
 }
+
+
+/* sound */
+
+#sound {
+  padding: 7px;
+  /* background-color: #1b1b1b;
+  border-radius: 5px; */
+  font-family: var(--ff-poppins);
+  display: flex;
+  align-items: center;
+  color: #647c89;
+}
+
+.sound-cloud {
+  font-size: 1.2rem;
+  margin: 7px;
+  color: #f50057;
+}
+
+.on-off {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#off {
+  color: #f50057;
+}
+
+#on {
+  display: none;
+  color: #08fdd8;
+}

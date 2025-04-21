@@ -1,0 +1,1 @@
+'firebase deploy' is all that you need, just move everything to public folder and run it.
